@@ -49,7 +49,5 @@ public class GreetingController {
         model.addAttribute("albumList", albumList);
         return "albums";
     }
-    //Create object /create route
-    //ArrayList for albums
 
 }
