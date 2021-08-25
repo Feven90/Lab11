@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H1>Album</H1>
+<Ul th:each = "album : ${albumList} ">
+    <Li>
+        Title: <div th:text ="${album.title}">title</div>
+        Artist: <div th:text ="${album.artist}">artist</div>
+        Song Count: <div th:text ="${album.songCount}">song count</div>
+        Length: <div th:text ="${album.length}">length</div>
+        Cover Art: <img th:src= "@{album.imageURL}" alt="this is cover art img"/>
+    </Li>
+</Ul>
+</body>
+</html>
