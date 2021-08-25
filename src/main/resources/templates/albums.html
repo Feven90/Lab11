@@ -12,7 +12,7 @@
         Artist: <div th:text ="${album.artist}">artist</div>
         Song Count: <div th:text ="${album.songCount}">song count</div>
         Length: <div th:text ="${album.length}">length</div>
-        Cover Art: <img th:src= "@{album.imageURL}" alt="this is cover art img"/>
+        Cover Art: <img th:src= "${album.imageUrl}" alt="this is cover art img"/>
     </Li>
 </Ul>
 </body>
